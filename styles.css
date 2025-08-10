@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #87CEEB, #98FB98);
+    background: linear-gradient(135deg, #21637d, #8983a3);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,9 +80,9 @@ body {
     transform: scale(0.95);
 }
 
-.control-btn.start { background: #51cf66; }
-.control-btn.pause { background: #ffd43b; }
-.control-btn.stop { background: #ff6b6b; }
+.control-btn.start { background: #131c15; }
+.control-btn.pause { background: #131c15; }
+.control-btn.stop { background: #131c15; }
 
 .time-settings {
     display: grid;
