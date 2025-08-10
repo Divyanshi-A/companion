@@ -1,5 +1,5 @@
 # Dog Pomodoro Timer
-
+https://divyanshi-a.github.io/companion/
 A functional Pomodoro timer featuring an animated dog companion that helps maintain focus during work sessions and collects bones as rewards.
 but originally intended to be 
 A cute and functional Pomodoro timer featuring an animated dog companion that helps me stay focused during work sessions and collects bones as rewards!
