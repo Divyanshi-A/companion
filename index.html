@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Timer Panel -->
+        <div class="timer-panel">
+            <div class="timer-display" id="timerDisplay">25:00</div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            
+            <div class="timer-controls">
+                <button class="control-btn start" onclick="startTimer()" id="startBtn">Start</button>
+                <button class="control-btn pause" onclick="pauseTimer()" id="pauseBtn">Pause</button>
+                <button class="control-btn stop" onclick="stopTimer()" id="stopBtn">Stop</button>
+            </div>
+            
+            <div class="time-settings">
+                <div class="time-input">
+                    <label>Work Time (min)</label>
+                    <input type="number" id="workTime" value="25" min="1" max="60">
+                </div>
+                <div class="time-input">
+                    <label>Break Time (min)</label>
+                    <input type="number" id="breakTime" value="5" min="1" max="30">
+                </div>
+            </div>
+            
+            <div class="session-info">
+                <div id="sessionType">Work Session</div>
+                <div>Completed Sessions: <span id="completedSessions">0</span></div>
+            </div>
+        </div>
+
+        <!-- Dog Animation -->
+        <div class="main">
+            <div class="thought-bubble" id="thoughtBubble">
+                <div class="thought-text" id="thoughtText">Ready to focus!</div>
+            </div>
+            
+            <div class="dog">
+                <div class="dog__paws">
+                    <div class="dog__bl-leg leg">
+                        <div class="dog__bl-paw paw"></div>
+                        <div class="dog__bl-top top"></div>
+                    </div>
+                    <div class="dog__fl-leg leg">
+                        <div class="dog__fl-paw paw"></div>
+                        <div class="dog__fl-top top"></div>
+                    </div>
+                    <div class="dog__fr-leg leg">
+                        <div class="dog__fr-paw paw"></div>
+                        <div class="dog__fr-top top"></div>
+                    </div>
+                </div>
+                <div class="dog__body">
+                    <div class="dog__tail"></div>
+                </div>
+                <div class="dog__head">
+                    <div class="dog__snout">
+                        <div class="dog__eyes">
+                            <div class="dog__eye-l"></div>
+                            <div class="dog__eye-r"></div>
+                        </div>
+                        <div class="dog__nose"></div>
+                    </div>
+                </div>
+                <div class="dog__head-c">
+                    <div class="dog__ear-r"></div>
+                    <div class="dog__ear-l"></div>
+                </div>
+            </div>
+            
+            <button class="new-thought-btn" onclick="changeThought()">New Thought</button>
+        </div>
+
+        <!-- Bone Collection Jars -->
+        <div class="bone-collection">
+            <div class="jar-counter">
+                <h3>Bone Jars</h3>
+                <div class="jar-stats">
+                    <div>Filled Jars: <span id="filledJars">0</span></div>
+                    <div>Current Jar: <span id="currentBones">0</span>/25 bones</div>
+                </div>
+            </div>
+            
+            <div class="jars-container" id="jarsContainer">
+                <div class="jar" id="jar-0">
+                    <div class="jar-bones" id="bones-0"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
