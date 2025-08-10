@@ -367,7 +367,7 @@ body {
 /* Thought Bubble Styles */
 .thought-bubble {
     position: absolute;
-    top: -8vmax;
+    top: -4vmax;
     left: 8vmax;
     background: white;
     border-radius: 2vmax;
